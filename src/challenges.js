@@ -97,11 +97,41 @@ function fizzBuzz(fizBuzzNums) {
 }
 
 // Desafio 9
-function encode() {
+function encode(str) {
   // seu código aqui
+  let splitStr = str.split('');
+  for (i in splitStr){
+    if (splitStr[i] == 'a'){
+      splitStr[i] = 1;
+    } if (splitStr[i] == 'e'){
+      splitStr[i] = 2;
+    } if (splitStr[i] == 'i'){
+      splitStr[i] = 3;
+    } if (splitStr[i] == 'o'){
+      splitStr[i] = 4;
+    } if (splitStr[i] == 'u'){
+      splitStr[i] = 5;
+    }
+  } let joinStr = splitStr.join('');
+  return joinStr;
 }
-function decode() {
+function decode(str) {
   // seu código aqui
+  let splitStr = str.split('');
+  for (i in splitStr){
+    if (splitStr[i] == 1){
+      splitStr[i] = 'a';
+    } if (splitStr[i] == 2){
+      splitStr[i] = 'e';
+    } if (splitStr[i] == 3){
+      splitStr[i] = 'i';
+    } if (splitStr[i] == 4){
+      splitStr[i] = 'o';
+    } if (splitStr[i] == 5){
+      splitStr[i] = 'u';
+    }
+  } let joinStr = splitStr.join('');
+  return joinStr;
 }
 
 module.exports = {
