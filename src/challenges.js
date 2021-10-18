@@ -9,18 +9,30 @@ function compareTrue(p1, p2) {
 }
 
 // Desafio 2
-function calcArea() {
+function calcArea(base, height) {
   // seu código aqui
+  let area = (base * height) / 2;
+  return area;
 }
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(str) {
   // seu código aqui
+  return str.split(' ');
 }
 
 // Desafio 4
-function concatName() {
+function concatName(nameInput) {
   // seu código aqui
+  let index = 0;
+  for (let i in nameInput) {
+      index = i;
+  }
+
+  let firstName = nameInput[0];
+  let lastName = nameInput[index];
+  let lastFirstName = lastName + ', ' + firstName;
+  return lastFirstName;
 }
 
 // Desafio 5
