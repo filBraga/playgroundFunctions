@@ -1,8 +1,11 @@
 // Filipe Braga
 
 // Desafio 1
-function compareTrue() {
+function compareTrue(p1, p2) {
   // seu código aqui
+  if (p1 === true && p2 === true) {
+    return true;
+  } return false;
 }
 
 // Desafio 2
